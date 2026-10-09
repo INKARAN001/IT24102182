@@ -1,0 +1,19 @@
+$ mpiexec -n 4 ./hello
+Just a normal process From rank 2 machine ICE
+Just a normal process From rank 1 machine ICE
+Hello World! From rank 0 machine ICE
+Just a normal process From rank 3 machine ICE
+
+$ mpiexec -n 4 ./messages1
+Just a normal process From rank 2 machine ICE
+in computer 3 the value of y is 30
+Just a normal process From rank 0 machine ICE
+SEnding message to computer 3 from computer 1
+
+$ mpiexec -n 4 ./message2
+Just a normal process From rank 2 machine ICE
+Just a normal process From rank 0 machine ICE
+in computer 3 the value of y is printed
+ 0  10  20  30  40  50  60  70  80  90 
+SEnding message to computer 3 from computer 1
+

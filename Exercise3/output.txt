@@ -1,0 +1,16 @@
+$ mpiexec -n 4 ./pi
+Received 1962454 hits from rank 1
+Received 1963781 hits from rank 2
+Received 1962976 hits from rank 3
+# of trials = 10000000, estimate of pi is 3.1413988000 (error 1.94e-04)
+Processes: 4  Time: 0.055923 s
+
+$ mpiexec -n 6 ./pi
+Received 1308145 hits from rank 1
+Received 1309561 hits from rank 2
+Received 1309261 hits from rank 3
+Received 1309313 hits from rank 4
+Received 1309153 hits from rank 5
+# of trials = 10000000, estimate of pi is 3.1421228000 (error 5.30e-04)
+Processes: 6  Time: 0.039549 s
+

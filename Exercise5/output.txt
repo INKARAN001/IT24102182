@@ -1,0 +1,29 @@
+$ mpiexec -n 4 ./mismatch    (hangs - killed after 10 s)
+Sending message to computer 3 from computer 1
+Computer 3 waiting for a message from computer 2
+Just a normal process From rank 2 machine ICE
+Just a normal process From rank 0 machine ICE
+
+job aborted:
+[ranks] message
+
+[0] terminated
+
+[1] process exited without calling finalize
+
+[2-3] terminated
+
+---- error analysis -----
+
+[1] on ICE
+./mismatch.exe ended prematurely and may have crashed. exit code 143
+
+---- error analysis -----
+
+$ mpiexec -n 4 ./message2_bsend
+Just a normal process From rank 2 machine ICE
+Just a normal process From rank 0 machine ICE
+Sending message to computer 3 from computer 1 (Bsend)
+Computer 1: Bsend returned (data copied to buffer)
+in computer 3 the value of y is printed
+ 0  10  20  30  40  50  60  70  80  90 

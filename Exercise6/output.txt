@@ -1,0 +1,27 @@
+$ mpiexec -n 6 ./pi_any_source   (run 1)
+Received 1309313 hits from rank 4
+Received 1308145 hits from rank 1
+Received 1309261 hits from rank 3
+Received 1309153 hits from rank 5
+Received 1309561 hits from rank 2
+# of trials = 10000000, estimate of pi is 3.1421228000 (error 5.30e-04)
+Processes: 6  Time: 0.038598 s
+
+$ mpiexec -n 6 ./pi_any_source   (run 2)
+Received 1309313 hits from rank 4
+Received 1308145 hits from rank 1
+Received 1309561 hits from rank 2
+Received 1309261 hits from rank 3
+Received 1309153 hits from rank 5
+# of trials = 10000000, estimate of pi is 3.1421228000 (error 5.30e-04)
+Processes: 6  Time: 0.037670 s
+
+$ mpiexec -n 6 ./pi_any_source   (run 3)
+Received 1308145 hits from rank 1
+Received 1309313 hits from rank 4
+Received 1309153 hits from rank 5
+Received 1309261 hits from rank 3
+Received 1309561 hits from rank 2
+# of trials = 10000000, estimate of pi is 3.1421228000 (error 5.30e-04)
+Processes: 6  Time: 0.046432 s
+
